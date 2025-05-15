@@ -20,4 +20,9 @@ export default async function helloRoutes(fastify: FastifyInstance) {
         balance = balance - 100;
         return { msg: "withdraw amount $100 " };
     });
+
+
+    fastify.get('/login', async (request, reply) => {
+        return { msg: "login success" };
+    });
 }
