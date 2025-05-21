@@ -20,6 +20,9 @@ EXPOSE 3000
 CMD ["npm", "start"]
 
 #   docker build -t fastify-app .
+
+#   docker run -d --name fastify-app-container -v fastify-app-data:/app/uploads -p 3000:3000 fastify-app
+
 #   docker run -p 3000:3000 fastify-app
 
 #   docker compose up --build
