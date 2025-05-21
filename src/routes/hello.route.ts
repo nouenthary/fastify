@@ -14,7 +14,8 @@ export default async function helloRoutes(fastify: FastifyInstance) {
             msg: 'Hello Fastify! api ...' ,
             code: 201,
             status: 'success',
-            test: 'message'
+            test: 'message',
+            data: 'data 100,000,000'
         };
     });
 
