@@ -11,7 +11,7 @@ export default async function helloRoutes(fastify: FastifyInstance) {
 
     fastify.get('/hello', async (request, reply) => {
         return {
-            msg: 'Hello Fastify! api ...' ,
+            msg: 'Hello Fastify! api ...',
             code: 201,
             status: 'success',
             test: 'message'
@@ -19,7 +19,7 @@ export default async function helloRoutes(fastify: FastifyInstance) {
     });
 
     fastify.get('/balance', async (request, reply) => {
-        return { msg: { balance : balance} };
+        return { msg: { balance: balance } };
     });
 
     fastify.get('/deposit', async (request, reply) => {

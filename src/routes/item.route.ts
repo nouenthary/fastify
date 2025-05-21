@@ -3,7 +3,7 @@ import { FastifyInstance } from 'fastify';
 class ItemRoutes {
     private items: string[] = ['item1', 'item2'];
 
-    constructor(private app: FastifyInstance) {}
+    constructor(private app: FastifyInstance) { }
 
     public async register() {
         this.app.get('/items', this.getItems.bind(this));
