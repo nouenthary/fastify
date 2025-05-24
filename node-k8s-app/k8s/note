@@ -17,3 +17,5 @@ minikube service node-k8s-service
 kubectl port-forward svc/fastify-service 8080:80
 
 kubectl delete all --all
+
+choco install kubernetes-cli
