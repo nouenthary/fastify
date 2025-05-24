@@ -1,4 +1,4 @@
-docker build -t fastify-app .
+docker build -t  node-k8s-app .
 
 kubectl apply -f k8s/
 
@@ -8,14 +8,18 @@ kubectl rollout restart deployment fastify-app
 
 kubectl rollout status deployment fastify-app
 
-kubectl get pods
-
 kubectl get services
-
-minikube service fastify-service
-
 kubectl get deployments
 kubectl get svc
 kubectl get pods
+minikube service node-k8s-service
 
 kubectl port-forward svc/fastify-service 8080:80
+
+kubectl delete all --all
+
+choco install kubernetes-cli
+
+sudo nano /etc/hosts
+
+kubectl describe service node-k8s-service
